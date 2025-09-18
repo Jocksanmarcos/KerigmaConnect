@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Church } from "lucide-react";
+import { Church, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 
 const navLinks = [
   { href: "/", label: "Início" },
@@ -30,6 +32,31 @@ const Header = () => {
             </Link>
           ))}
         </nav>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left">
+              <nav className="flex flex-col items-start gap-6 pt-8">
+                {navLinks.map((link) => (
+                  <SheetClose asChild key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="text-lg text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );

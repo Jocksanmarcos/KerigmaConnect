@@ -3,8 +3,8 @@ import { Users, Target, Eye } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-8">Sobre a Comunidade Kerigma</h1>
+    <div className="container mx-auto px-4 py-8 md:py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">Sobre a Comunidade Kerigma</h1>
       <p className="text-center text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
         Somos uma comunidade de fé dedicada a proclamar o evangelho, servir ao próximo e crescer juntos no conhecimento e na graça de nosso Senhor Jesus Cristo.
       </p>
