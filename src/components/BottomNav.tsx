@@ -12,7 +12,7 @@ const navLinks = [
 
 const BottomNav = () => {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 md:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 md:hidden">
       <div className="flex justify-around items-center h-16">
         {navLinks.map((link) => (
           <NavLink
@@ -21,8 +21,8 @@ const BottomNav = () => {
             end={link.href === "/"}
             className={({ isActive }) =>
               cn(
-                "flex flex-col items-center justify-center gap-1 text-xs text-gray-500 dark:text-gray-400 w-full h-full",
-                isActive && "text-primary dark:text-primary-foreground"
+                "flex flex-col items-center justify-center gap-1 text-xs text-gray-500 dark:text-gray-400 w-full h-full transition-colors",
+                isActive && "text-primary dark:text-primary-foreground bg-primary/10 dark:bg-primary/20"
               )
             }
           >

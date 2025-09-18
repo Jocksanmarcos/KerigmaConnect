@@ -10,7 +10,7 @@ const About = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Card>
+        <Card className="transition-shadow hover:shadow-lg">
           <CardHeader className="flex flex-row items-center gap-4">
             <Target className="w-8 h-8 text-primary" />
             <CardTitle>Nossa Missão</CardTitle>
@@ -19,7 +19,7 @@ const About = () => {
             <p>Levar a mensagem transformadora de Jesus a todas as pessoas, fazendo discípulos e promovendo o Reino de Deus em nossa cidade e no mundo.</p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-shadow hover:shadow-lg">
           <CardHeader className="flex flex-row items-center gap-4">
             <Eye className="w-8 h-8 text-primary" />
             <CardTitle>Nossa Visão</CardTitle>
@@ -28,7 +28,7 @@ const About = () => {
             <p>Ser uma igreja relevante, acolhedora e cheia do Espírito Santo, que impacta a sociedade com o amor e o poder de Deus.</p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-shadow hover:shadow-lg">
           <CardHeader className="flex flex-row items-center gap-4">
             <Users className="w-8 h-8 text-primary" />
             <CardTitle>Nossos Valores</CardTitle>

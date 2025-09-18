@@ -7,11 +7,11 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-20 text-center">
+      <section className="bg-gradient-to-br from-indigo-500 to-blue-600 text-white py-20 text-center">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">Bem-vindo à Comunidade Kerigma</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Um lugar para pertencer, crer e crescer.</p>
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
             <Link to="/sobre">
               Conheça-nos Melhor <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -36,7 +36,7 @@ const Index = () => {
       <section className="bg-gray-100 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
+            <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
                 <CardTitle>Próximos Eventos</CardTitle>
               </CardHeader>
@@ -47,7 +47,7 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
                 <CardTitle>Últimas Mensagens</CardTitle>
               </CardHeader>
